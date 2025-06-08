@@ -7,9 +7,3 @@ services:
     image: nginx:latest
     ports:
       - "8080:80"
-    networks:
-      - bridge
-
-networks:
-  bridge:
-    driver: bridge
