@@ -3,6 +3,7 @@ name: automation
 version: "3.8"
 services:
   web:
+    container_name: nginx
     image: nginx:latest
     ports:
       - "8080:80"
