@@ -17,7 +17,8 @@ services:
       - NODE_FUNCTION_ALLOW_EXTERNAL=xml
     volumes:
       - n8n_data:/home/node/.n8n
-    command: sh -c "npm install xml"
+    command: bash -c "npm install xml && npm start"
+
 
 
 volumes:
