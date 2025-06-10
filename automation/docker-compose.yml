@@ -18,7 +18,7 @@ services:
     volumes:
       - n8n_data:/home/node/.n8n
     #entrypoint: sh -c "npm install xml"
-    command: "/bin/cd /usr/local/lib/node_modules"
+    #command: "/bin/cd /usr/local/lib/node_modules"
 
 
 
