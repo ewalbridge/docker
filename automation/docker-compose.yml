@@ -16,8 +16,8 @@ services:
       - NODE_FUNCTION_ALLOW_BUILTIN=*
       - NODE_FUNCTION_ALLOW_EXTERNAL=*
     post_start:
-      - command: sh -c "npm install xml"
-        user: root
+      - command: sh -c "npm install is-buffer"
+        user: node
     volumes:
       - n8n_data:/home/node/.n8n
 volumes:
