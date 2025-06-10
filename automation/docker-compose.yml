@@ -15,9 +15,9 @@ services:
       - N8N_SECURE_COOKIE=false
       - NODE_FUNCTION_ALLOW_BUILTIN=*
       - NODE_FUNCTION_ALLOW_EXTERNAL=*
-    #post_start:
-    #  - command: sh -c "npm install -g buffer"
-    #    user: root
+    post_start:
+      - command: sh -c "npm install xml"
+        user: root
     volumes:
       - n8n_data:/home/node/.n8n
 volumes:
