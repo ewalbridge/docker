@@ -1,0 +1,10 @@
+server {
+    listen 8888;
+
+    server_name your_domain automation.moodybridge.local;
+        
+    location / {
+        proxy_pass automation.moodybridge.local:5678;
+        include proxy_params;
+    }
+}
