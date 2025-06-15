@@ -15,10 +15,12 @@ services:
       - N8N_SECURE_COOKIE=false
       - NODE_FUNCTION_ALLOW_BUILTIN=*
       - NODE_FUNCTION_ALLOW_EXTERNAL=*
-    # post_start:
-    #   - command: sh -c "npm install buffer-to-arraybuffer"
-    #     user: node
     volumes:
       - n8n_data:/home/node/.n8n
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+
 volumes:
   n8n_data:
