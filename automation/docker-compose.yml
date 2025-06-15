@@ -23,8 +23,7 @@ services:
     restart: always
     ports:
       - "8080:80"
-    #volumes:
-      #- /etc/nginx/nginx.conf:/etc/nginx/
+      - "8888:8888"
 
 volumes:
   n8n_data:

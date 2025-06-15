@@ -3,7 +3,7 @@ server {
 
     server_name automation.moodybridge.local;
         
-    location / {
+    location /automation {
         proxy_pass automation.moodybridge.local:5678;
         include proxy_params;
     }
