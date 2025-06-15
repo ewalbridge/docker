@@ -19,6 +19,8 @@ services:
       - n8n_data:/home/node/.n8n
   nginx:
     image: nginx:latest
+    container_name: nginx
+    restart: always
     ports:
       - "8080:80"
 
