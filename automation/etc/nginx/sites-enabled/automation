@@ -1,7 +1,0 @@
-server {
-    listen 8888;
-    server_name automation;
-    location / {
-        proxy_pass 172.18.0.2:5678;
-    }
-}
